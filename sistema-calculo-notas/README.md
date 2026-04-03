@@ -1,4 +1,4 @@
-# 📊 Sistema de Gestão de Notas e Estatísticas
+# 📊 sistema-calculo-notas
 
 Este projeto é uma atividade prática desenvolvida para a disciplina de **Lógica de Programação** no curso de ADS do **SENAI CIMATEC**.
 
