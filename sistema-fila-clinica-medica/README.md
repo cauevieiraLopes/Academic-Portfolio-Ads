@@ -19,3 +19,10 @@ O algoritmo simula o gerenciamento de uma fila de espera em uma clínica médica
 2. Compile o arquivo:
    ```bash
    g++ main.cpp -o sistema_clinica
+3. Execute o programa:
+   ```
+   ./sistema_clinica
+   ```
+
+## 👤 Autor
+* Cauê Vieira Lopes
