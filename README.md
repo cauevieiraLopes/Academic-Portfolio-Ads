@@ -1,6 +1,6 @@
 # 🎓 Atividades Acadêmicas - Técnico em ADS
 
-Este repositório armazena os projetos, exercícios e estudos desenvolvidos durante o curso **Técnico em Análise e Desenvolvimento de Sistemas (ADS)** no **SENAI CIMATEC**.
+Este repositório armazena os projetos, exercícios e estudos desenvolvidos durante o curso **Técnico em Análise e Desenvolvimento de Sistemas (ADS)** no **SENAI CIMATEC**, além de incluir atividades realizadas por iniciativa própria e conteúdos provenientes de cursos complementares externos à formação.
 
 O objetivo é documentar o meu progresso técnico, organizar o conhecimento adquirido e construir um portfólio para o mercado de tecnologia.
 
