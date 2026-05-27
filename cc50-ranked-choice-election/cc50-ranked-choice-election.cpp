@@ -40,22 +40,16 @@ void eleicao (const std::array<std::string, 3>& l, std::array<int, 3>& v, const 
 					nome = "#";
 				}
 				
-				if(nome == l[0] || nome == l[1] || nome == l[2]){
-					if(nome == lista_rank[0] || nome == lista_rank[1] || nome == lista_rank[2]){
-						continuar = false;
-						std::cout<<"O candidato já foi votado anteriormente!\n";
+				if((nome == l[0] || nome == l[1] ||nome == l[2]) && !(nome == lista_rank[0] || nome == lista_rank[1] || nome == lista_rank[2])){
+						continuar = true;
+						lista_rank[rank - 1] = nome;
 					}
-						else{ 
-							continuar = true;
-							lista_rank[rank-1] = nome;
+						else{
+							continuar = false;
+							std::cout<<"Nome inválido ou candidato já votado\n";
 						}
-				}
-					else{
-						continuar = false;
-						std::cout<<"Candidato Inválido!\n";
-					}
 			}while(continuar == false);
-			
+						
 			switch(rank){
 				case 1:
 					for(int i = 0; i < 3; i++){
@@ -85,12 +79,6 @@ void eleicao (const std::array<std::string, 3>& l, std::array<int, 3>& v, const 
 }
 
 void vencedor_da_eleicao (std::array<std::string, 3>& l, std::array<int, 3>& v){
-	if(v[0] == v[1] && v[0] == v[2]){
-		std::cout<<"\nEmpate! todos os candidatos tiveram a mesma quantidade de votos\n";
-		
-		return;
-	}
-	
 	//organizar em ordem crescente
 	for(int i = 0; i < l.size() - 1; i++){
 		for(int j = 0; j < l.size() - 1; j++){
@@ -100,18 +88,9 @@ void vencedor_da_eleicao (std::array<std::string, 3>& l, std::array<int, 3>& v){
 			}
 		}
 	}
-	
-	if(v[1] == v.back()){
-		std::cout<<"\nEmpate entre: "<<l[1]<<" e "<<l.back();
-		return;
-	}
-		else{
-			std::cout<<"\nVencedor: "<<l.back();
-			return;
-		}
+	std::cout<<"Vencedor: "<<l.back();
 }
 	
-
 int main(){
     std::array<std::string, 3> lista_candidados = {"Alice", "Charlie", "Bob"};
     std::array<int, 3> votos_candidatos = {0, 0, 0};
