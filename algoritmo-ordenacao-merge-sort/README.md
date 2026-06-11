@@ -1,20 +1,19 @@
 # 🧩 Algoritmo de Ordenação Avançado (Merge Sort)
 
-Este projeto apresenta a implementação manual do algoritmo **Merge Sort**, desenvolvido como atividade prática avançada de estruturas de dados e análise de algoritmos na trilha de ADS do **SENAI CIMATEC**.
+Este projeto apresenta uma implementação iterativa e recursiva do algoritmo **Merge Sort**, integrada a um sistema dinâmico de captura e validação de dados via terminal, desenvolvida para o curso de ADS do **SENAI CIMATEC**.
 
 ## 📖 Descrição
-O Merge Sort é um algoritmo clássico de ordenação baseado no paradigma de **Divisão e Conquista**. Ele quebra recursivamente um vetor desordenado em subvetores menores até que cada subvetor contenha apenas um elemento (já que um único elemento está tecnicamente ordenado). Em seguida, o algoritmo realiza o processo de intercalação (*merge*), combinando e ordenando esses subvetores para reconstruir o vetor original completamente ordenado.
+O programa gerencia a criação de um vetor de inteiros em tempo de execução, aplicando uma estrutura de controle baseada em loops infinitos (`while true`) para garantir a consistência dos dados. O sistema exige uma barreira mínima de dois elementos inseridos antes de liberar a opção de encerramento do fluxo (acionada ao digitar `0`). 
 
-Diferente de algoritmos mais simples (como o Bubble Sort), o Merge Sort garante uma performance altamente eficiente e estável, com complexidade de tempo de $O(n \log n)$ em todos os casos (pior, melhor e médio caso).
+Uma vez coletados os dados, o algoritmo executa a ordenação estável utilizando o paradigma de **Divisão e Conquista** do Merge Sort, exibindo o estado do vetor antes e depois do processamento recursivo.
 
 ## 🛠️ Tecnologias e Conceitos Aplicados
 - **Linguagem:** C++
 - **Conceitos de Algoritmos:**
-  - **Paradigma de Divisão e Conquista:** Quebra lógica do problema em partes menores gerenciáveis.
-  - **Recursão Computacional:** Estruturação da função `mergeSort` chamando a si mesma para subdividir o vetor até atingir a condição de parada (`left < right`).
-  - **Prevenção de Overflow de Memória:** Cálculo otimizado do ponto médio do vetor usando `left + (right - left) / 2`.
-  - **Vetores Dinâmicos (`std::vector`):** Uso de containers modernos da STL para alocação e passagem de memória por referência (`&`), minimizando o overhead de execução.
-  - **Intercalação Ordenada (*Merging*):** Uso de ponteiros de controle (`i`, `j`, `k`) e vetores auxiliares (`leftVec`, `rightVec`) para reconstruir o array em ordem crescente.
+  - **Fluxo de Interrupção Controlada (`break`/`continue`):** Uso de desvios condicionais dentro de um loop de escopo aberto para criar regras de negócios de entrada de dados.
+  - **Divisão e Conquista Recursiva:** Divisão lógica sucessiva do vetor original até estruturas unitárias e remontagem ordenada via intercalação (*merging*).
+  - **Containers Dinâmicos da STL (`std::vector`):** Utilização de alocação sob demanda via `.push_back()`, minimizando o desperdício de memória estática.
+  - **Loops de Varredura Otimizados:** Uso do Range-based `for` com dedução automática de tipo (`auto i : lista`) para renderização limpa dos dados em tela.
 
 ## 🚀 Como Executar
 1. Certifique-se de possuir um compilador C++ configurado no seu ambiente (como o g++).
