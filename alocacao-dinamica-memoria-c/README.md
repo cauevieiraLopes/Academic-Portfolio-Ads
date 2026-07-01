@@ -24,4 +24,4 @@ O programa demonstra na prática como o computador manipula arrays dinâmicos na
     ./alocacao_memoria
 
 ## 👤 Autor
-* Cauê Vieira Lopes - 
+* Cauê Vieira Lopes - [Perfil no Git-Hub](https://github.com/cauevieiraLopes)
