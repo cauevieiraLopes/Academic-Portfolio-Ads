@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Academic-Portfolio-Ads.iml" filepath="$PROJECT_DIR$/Academic-Portfolio-Ads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/par-ou-impar-java/par-ou-impar-java.iml" filepath="$PROJECT_DIR$/par-ou-impar-java/par-ou-impar-java.iml" />
+    </modules>
+  </component>
+</project>
