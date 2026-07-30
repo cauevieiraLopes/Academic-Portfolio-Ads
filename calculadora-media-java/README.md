@@ -17,6 +17,6 @@ O programa solicita ao usuário a inserção de três notas escolares via termin
 3. Execute o arquivo via terminal ou pela sua IDE (IntelliJ IDEA):
    ```bash
    java CalcularMedia.java
-
-👤 Autor
-Cauê Vieira Lopes - Perfil no Git-Hub
+   
+# 👤 Autor
+Cauê Vieira Lopes - [Perfil no Git-Hub](https://github.com/cauevieiraLopes)
