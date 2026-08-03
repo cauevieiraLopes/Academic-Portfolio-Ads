@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/impar-par.java/impar-par.iml" filepath="$PROJECT_DIR$/impar-par.java/impar-par.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/par-ou-impar-java.iml" filepath="$PROJECT_DIR$/.idea/par-ou-impar-java.iml" />
-    </modules>
-  </component>
-</project>
